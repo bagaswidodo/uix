@@ -1,0 +1,199 @@
+ <html>
+ <head>
+ <!-- Material Design fonts -->
+<!--   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+  <!-- Bootstrap -->
+  <link href="dist//css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Material Design -->
+  <link href="dist/css/bootstrap-material-design.min.css" rel="stylesheet">
+  <link href="dist/css/ripples.min.css" rel="stylesheet">
+   <!-- font configuration -->
+  <style type="text/css">
+	/* roboto-regular - latin */
+	@font-face {
+	  font-family: 'Roboto';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: url('dist/fonts/roboto/roboto-v15-latin-regular.eot'); /* IE9 Compat Modes */
+	  src: local('Roboto'), local('Roboto-Regular'),
+	       url('dist/fonts/roboto/roboto-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	       url('dist/fonts/roboto/roboto-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+	       url('dist/fonts/roboto/roboto-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+	       url('dist/fonts/roboto/roboto-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+	       url('dist/fonts/roboto/roboto-v15-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+	}
+
+	@font-face {
+	  font-family: 'Material Icons';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: url(dist/fonts/material/MaterialIcons-Regular.eot); /* For IE6-8 */
+	  src: local('Material Icons'),
+	       local('MaterialIcons-Regular'),
+	       url(dist/fonts/material/MaterialIcons-Regular.woff2) format('woff2'),
+	       url(dist/fonts/material/MaterialIcons-Regular.woff) format('woff'),
+	       url(dist/fonts/material/MaterialIcons-Regular.ttf) format('truetype');
+	}
+
+	.material-icons {
+	  font-family: 'Material Icons';
+	  font-weight: normal;
+	  font-style: normal;
+	  font-size: 24px;  /* Preferred icon size */
+	  display: inline-block;
+	  width: 1em;
+	  height: 1em;
+	  line-height: 1;
+	  text-transform: none;
+	  letter-spacing: normal;
+	  word-wrap: normal;
+	  white-space: nowrap;
+	  direction: ltr;
+
+	  /* Support for all WebKit browsers. */
+	  -webkit-font-smoothing: antialiased;
+	  /* Support for Safari and Chrome. */
+	  text-rendering: optimizeLegibility;
+
+	  /* Support for Firefox. */
+	  -moz-osx-font-smoothing: grayscale;
+
+	  /* Support for IE. */
+	  font-feature-settings: 'liga';
+	}
+  </style>
+  </head>
+<body>
+  <div class="container">
+	  <div class="page-header" id="banner">
+		<div class="row">
+		  <div class="col-sm-6">
+			<h1>Material Design</h1>
+
+			<p class="lead">Based on Google Material design</p>
+		  </div>
+		  <div class="col-sm-6">
+			<div class="well infobox">
+			  <p><em>Material Design for Bootstrap</em> is a theme for Bootstrap 3 which lets you use the new
+				<a href="http://www.google.com/design/spec/material-design/">Google Material Design</a> in your favorite front-end framework.
+			  </p>
+
+			  <p>If you like this project you can support me by donating something on Gittip, starring this repository, or
+				<a href="https://github.com/FezVrasta/bootstrap-material-design/issues">reporting bugs and ideas</a>.</p>
+
+			  <p>Read more about <em>Material Design for Bootstrap</em>
+				<a href="https://github.com/FezVrasta/bootstrap-material-design">at the Github page</a>.</p>
+
+			  <a href="https://github.com/FezVrasta/bootstrap-material-design/archive/master.zip" class="btn btn-sup btn-material-pink btn-raised">
+				<i class="material-icons">file_download</i>
+				<span>DOWNLOAD</span>
+			  </a>
+			  <a href="https://www.gittip.com/FezVrasta/" class="btn btn-sup btn-material-brown">
+				<i class="material-icons">favorite_border</i>
+				<span>GITTIP</span>
+			  </a>
+			  <a href="https://github.com/FezVrasta/bootstrap-material-design/issues" class="btn btn-sup btn-material-deeppurple">
+				<i class="material-icons">info_outline</i>
+				<span>ISSUES</span>
+			  </a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+	    <div class="bs-docs-section clearfix">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+					  <h1 id="navbar">Navbar</h1>
+					</div>
+					
+					<!-- nav example -->
+					<div class="bs-component">
+					  <div class="navbar navbar-default">
+						<div class="container-fluid">
+						  <div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+							  <span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="javascript:void(0)">Brand</a>
+						  </div>
+						  <div class="navbar-collapse collapse navbar-responsive-collapse">
+							<ul class="nav navbar-nav">
+							  <li class="active"><a href="javascript:void(0)">Active</a></li>
+							  <li><a href="javascript:void(0)">Link</a></li>
+							  <li class="dropdown">
+								<a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+								  <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+								  <li><a href="javascript:void(0)">Action</a></li>
+								  <li><a href="javascript:void(0)">Another action</a></li>
+								  <li><a href="javascript:void(0)">Something else here</a></li>
+								  <li class="divider"></li>
+								  <li class="dropdown-header">Dropdown header</li>
+								  <li><a href="javascript:void(0)">Separated link</a></li>
+								  <li><a href="javascript:void(0)">One more separated link</a></li>
+								</ul>
+							  </li>
+							</ul>
+							<form class="navbar-form navbar-left">
+							  <div class="form-group">
+								<input type="text" class="form-control col-md-8" placeholder="Search">
+							  </div>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+							  <li><a href="javascript:void(0)">Link</a></li>
+							  <li class="dropdown">
+								<a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+								  <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+								  <li><a href="javascript:void(0)">Action</a></li>
+								  <li><a href="javascript:void(0)">Another action</a></li>
+								  <li><a href="javascript:void(0)">Something else here</a></li>
+								  <li class="divider"></li>
+								  <li><a href="javascript:void(0)">Separated link</a></li>
+								</ul>
+							  </li>
+							</ul>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					<!-- end nav example -->
+					
+					
+					<!-- button -->
+					<h3>Floating action buttons <small>a.k.a fab</small></h3>
+					<p class="bs-component">
+					  <a href="javascript:void(0)" class="btn btn-default btn-fab"><i class="material-icons">grade</i></a>
+					  <a href="javascript:void(0)" class="btn btn-primary btn-fab"><i class="material-icons">grade</i></a>
+					  <a href="javascript:void(0)" class="btn btn-success btn-fab"><i class="material-icons">grade</i></a>
+					  <a href="javascript:void(0)" class="btn btn-info btn-fab"><i class="material-icons">grade</i></a>
+					  <a href="javascript:void(0)" class="btn btn-warning btn-fab"><i class="material-icons">grade</i></a>
+					  <a href="javascript:void(0)" class="btn btn-danger btn-fab"><i class="material-icons">grade</i></a>
+					</p>
+					<h4><small><code>.btn-group-sm .btn-fab</code> or <code>.btn-fab-mini</code></small></h4>
+					<p class="bs-component btn-group-sm">
+					  <a href="javascript:void(0)" class="btn btn-default btn-fab"><i class="material-icons">grade</i></a>
+					  <a href="javascript:void(0)" class="btn btn-primary btn-fab"><i class="material-icons">grade</i></a>
+					  <a href="javascript:void(0)" class="btn btn-success btn-fab"><i class="material-icons">grade</i></a>
+					  <a href="javascript:void(0)" class="btn btn-info btn-fab"><i class="material-icons">grade</i></a>
+					  <a href="javascript:void(0)" class="btn btn-warning btn-fab"><i class="material-icons">grade</i></a>
+					  <a href="javascript:void(0)" class="btn btn-danger btn-fab"><i class="material-icons">grade</i></a>
+					</p>
+					<!-- end button -->
+				</div>
+			</div>
+		</div>
+	  
+	  
+  </div><!-- container -->
+ </body>
+ <script src="vendor/jquery/js/jquery.min.js"></script>
+ <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+ </html>
