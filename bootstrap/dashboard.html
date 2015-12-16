@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Backend</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><i class="glyphicon glyphicon-dashboard"></i> Dashboard</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="glyphicon glyphicon-user"></i> Akun <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Pengaturan Akun</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+        <div class="container">
+
+          <!-- data member -->
+          <div class="row">
+            <!-- member form -->
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">Account Info</div>
+                <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="img-circle" data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDI4MCAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUxYWEzYTAxMjEgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxNHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTFhYTNhMDEyMSI+PHJlY3Qgd2lkdGg9IjI4MCIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMDMuNjc5Njg3NSIgeT0iOTYuMyI+MjgweDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 100px; width: 100px; display: block;">
+                  </div>
+                  <div class="col-md-9">
+                    <h1>Lorem</h1>
+                    <p>Ipsum dolor </p>
+                  </div>
+                </div>
+                  
+                </div>
+              </div>
+              <!-- form -->
+              <div class="panel panel-default">
+                <div class="panel-heading">New Member</div>
+                <div class="panel-body">
+                  <table class="table table-bordered table-hover table-striped">
+                  <thead>
+                    <tr>
+                      <td>No</td>
+                      <td>Nama</td>
+                      <td>Aksi</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Foo</td>
+                      <td>
+                        <button class="btn btn-default"><i class="glyphicon glyphicon glyphicon-eye-open"></i></button>
+                        <button class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i></button>
+                        <button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></button>
+
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+
+                  <nav>
+                    <ul class="pagination">
+                      <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+
+                      
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- end form -->
+            </div>
+            <!-- end member form -->
+
+            <!-- member data -->
+            <div class="col-md-6">
+              <!-- form -->
+              <div class="panel panel-default">
+                <div class="panel-heading">New Member</div>
+                <div class="panel-body">
+                  <form >
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Nama</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nama">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Email</label>
+                      <input type="email" class="form-control" id="exampleInputPassword1" placeholder="someone@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Alamat</label>
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label>Jumlah Anggota keluarga</label>
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label>Yang Tinggal Di rumah</label>
+                      <select multiple class="form-control">
+                        <option>Ayah</option>
+                        <option>Ibu</option>
+                        <option>Istri</option>
+                        <option>Nenek</option>
+                        <option>Kakek</option>
+                      </select>
+                    </div>    
+                    <label for="">Penghasilan perbulan</label>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        $0 - $10
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        $10 - $100
+                      </label>
+                    </div>
+
+
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                        <div class="input-group">
+                          <div class="input-group-addon">$</div>
+                          <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                          <div class="input-group-addon">.00</div>
+
+                        </div>
+                            <!-- <button type="submit" class="btn btn-primary">Transfer cash</button> -->
+                      </div>
+
+                    </form>
+
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Saya Menyetujui Persyaratan layanan
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Login</button>
+                  </form>
+                </div>
+              </div>
+              <!-- end form -->
+            </div>
+            <!-- end member data -->
+
+          </div>
+
+          <footer>
+            <hr>
+            &copy; 2015. GarengStudio
+          </footer>
+        </div> <!-- /container -->
+
+
+   <script  src="dist/js/jquery.min.js">  </script>
+   <script  src="dist/js/bootstrap.min.js">   </script>
+
+  </body>
+</html>
