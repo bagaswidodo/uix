@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: arial, sans-serif;
+  color: #221F51;
+}
+
+.wrapper {
+  font-size: 1.6em;
+  padding: 1.8em;
+  margin: 0 auto;
+  width: 600px; /* NEW */
+  background-color: white;
+}
+
+/* NEW */
+#logo {
+  display: inline-block;
+  height: 96px;
+  width: 84px;
+  margin-left: -15px;
+}
+
+.sb-item {
+  /*
+  height: 62px;
+  width: 48px;
+  padding-top: 50px;
+   */
+   margin-bottom: 0px;
+   /* NEW */
+  display: inline;
+  list-style-type: none;
+  margin-left: 14px;
+  background: none;
+}
+
+.sb-icon-list {
+  margin-bottom: 50px;
+  width: 430px;
+  display: inline-block;
+  font-size: .9em;
+}
+
+/*
+.first-sb {
+  background: url('../images/first-sb.png') top center no-repeat;
+}
+.second-sb {
+  background: url('../images/second-sb.png') top center no-repeat;
+}
+.third-sb {
+  background: url('../images/third-sb.png') top center no-repeat;
+}
+.fourth-sb {
+  background: url('../images/fourth-sb.png') top center no-repeat;
+}
+.fifth-sb {
+  background: url('../images/fifth-sb.png') top center no-repeat;
+}
+*/
+
+.list-span{
+  display: inline-block;
+  padding-left: 0px;
+  padding-top: 8px;
+  font-size: 1.4em;
+}
+
+/* Eliminates the social part all together */
+#social {
+  display: none;
+}
+
+#big-image {
+  margin-bottom: 50px;
+  width: 570px;
+  height: 355px;
+}
+
+#newsletter {
+  background: url('../images/newsletter-ic.png') bottom left no-repeat;
+  height: 34px;
+  padding-left: 54px;
+  position: relative; /* So I can position subscribe-span */
+  margin-bottom: 50px;
+}
+
+#signup-txt {
+  width: 246px;
+  display: inline-block;
+  font-size: .7em;
+  margin-right: 15px;
+  padding-top: 5px;
+}
+
+.email-input {
+  height: 25px;
+  width: 150px;
+  margin-right: 15px;
+}
+
+.button {
+  border:1px solid #999999;
+  -webkit-border-radius: 42px;
+  -moz-border-radius: 42px;
+  border-radius: 42px;
+  font-size:12px;
+  padding: 5px 10px 5px 10px;
+  text-decoration:none;
+  display:inline-block;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+  font-weight:bold;
+  color: #000000;
+  background-color: #FFFFFF; background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #CFCFCF);
+  background-image: -moz-linear-gradient(top, #FFFFFF, #CFCFCF);
+  background-image: -ms-linear-gradient(top, #FFFFFF, #CFCFCF);
+  background-image: -o-linear-gradient(top, #FFFFFF, #CFCFCF);
+  background-image: linear-gradient(to bottom, #FFFFFF, #CFCFCF);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFFFFF, endColorstr=#CFCFCF);
+}
+
+.subscribe-span{
+  position: absolute;
+  bottom: 10;
+  margin-top: 8px;
+}
+
+.article {
+  display: inline-block;
+  width: 166px;
+  margin-right: 29px;
+}
+
+.art-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.third-art {
+  margin-right: 0px;
+}
+
+.fourth-art {
+  margin-right: 0px;
+}
+
+/* NEW */
+.fourth-art {
+  display: none;
+}
