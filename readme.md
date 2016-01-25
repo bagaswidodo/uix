@@ -7,3 +7,4 @@ Framework CSS yang digunakan pada demo ini
 * [Semantic-UI] (http://semantic-ui.com/)
 * [Google Material Design] (http://www.getmdl.io/)
 * [Bootstrap Material Design] (http://fezvrasta.github.io/bootstrap-material-design/)
+* [Materialize] (http://materializecss.com/getting-started.html)
