@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Backend Dashboard</title>
+
+  <!-- CSS  -->
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="../../font/material-icon/material-icons.css">
+</head>
+<body>
+
+<!-- navigation -->
+ <nav class="red lighten-1 ">
+    <div class="nav-wrapper container">
+      <a href="#!" class="brand-logo red-text text-lighten-5">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Account Setting</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Logout</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down ">
+        <li><a href="#" class="red-text text-lighten-5"><i class="material-icons left">home</i>Awal</a></li>
+        <li><a href="#" class="red-text text-lighten-5"><i class="material-icons left">business</i>Fasilitas Kesehatan</a></li>
+        <!-- Dropdown Trigger -->
+        <li>
+          <a class="dropdown-button red-text text-lighten-5" href="#!" data-activates="dropdown1">
+          <i class="material-icons left">perm_identity</i>Akun
+          <i class="material-icons right">arrow_drop_down</i></a>
+        </li>
+      </ul>
+      <ul class="side-nav red lighten-1" id="mobile-demo">
+        <li><a href="#" class="red-text text-lighten-5">
+          <i class="material-icons left">home</i>Awal</a>
+        </li>
+        <li>
+          <a href="#" class="red-text text-lighten-5"><i class="material-icons left">business</i>Fasilitas Kesehatan</a>
+        </li> 
+      </ul>
+    </div>
+  </nav>
+  <!-- end navigation -->
+  <div class="container">
+    <div class="row">
+        <!-- first -->
+        <div class="col s12 m8">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Benchmark</span>
+              <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="col s9" placeholder="Location. . . ">
+                    </div>
+                    <div class="row">
+                      <button class="waves-effect waves-light btn col s3">
+                      <i class="material-icons left">my_location</i>Find
+                      </button>
+                      <span class="col s1">&nbsp;</span>
+                      <button class="waves-effect waves-light btn col s5">
+                      <i class="material-icons left">send</i>Search
+                      </button>
+                      <!-- Modal Trigger -->
+                      <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a>
+
+                      <!-- Modal Structure -->
+                      <div id="modal1" class="modal bottom-sheet">
+                        <div class="modal-content black-text">
+                        <div class="row">
+                          <div class="col s6 m6">
+                            <table class="black-text">
+                              <tr>
+                                <td>Lokasi Anda</td>
+                                <td>: {{ Geocode Latlng }}</td>
+                              </tr>
+                              <tr>
+                                <td>HTML5 Geolocation Accuracy</td>
+                                <td>: {{ Accuracy }}</td>
+                              </tr>
+                              <tr>
+                                <td>Lokasi Anda</td>
+                                <td>: {{ LATLNG result }}</td>
+                              </tr>
+                            </table>
+                          </div>
+                          <div class="col s6 m6">
+                            <ul class="collection">
+                              <li class="collection-item avatar">
+                                <img src="images/yuna.jpg" alt="" class="circle">
+                                <span class="title">Euclidean</span>
+                                <p>Query Execution</p>
+                                <p>Memory Usage</p>
+                                <a class="waves-effect waves-light btn secondary-content euclid" href="#" onclick="euclidVisual()">
+                                <span class="left">{{x.y}}</span>Visualize
+                                </a>
+                              </li>
+                              <li class="collection-item avatar">
+                                <img src="images/yuna.jpg" alt="" class="circle">
+                                <span class="title">Euclidean</span>
+                                <p>Query Execution</p>
+                                <p>Memory Usage</p>
+                                <a class="waves-effect waves-light btn secondary-content" href="#" onclick="havVisual()">
+                                <span class="left">{{x.y}}</span>Visualize
+                                </a>
+                              </li>
+                              </ul>
+                          </div>
+                        </div>
+                        
+                        </div>
+                        <div class="modal-footer">
+                          <!-- <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a> -->
+                        </div>
+                      </div>
+                      <!-- end modal -->
+                    </div>
+                  </div>
+              </form>
+            </div>
+            <div class="card-action">
+            
+              <a href="#">&nbsp;</a>
+              <a href="#">&nbsp;</a>
+            </div>
+          </div>
+        </div>
+        <!-- second -->
+         <div class="col s12 m4">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">HH:MM:SS</span>
+              <p>day, dd-mmmm-yyyy</p>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <footer class="page-footer bottom-fixed">>
+    <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+  </footer>
+
+<!-- modal config -->
+<div id="euclidModal" class="modal">
+    <div class="modal-content">
+      <h4>Euclidean Modal</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <div id="havModal" class="modal">
+    <div class="modal-content">
+      <h4>Haversine Modal</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+</body>
+  <!--  Scripts-->
+  <script src="../../js/vendor/jquery.min.js"></script>
+  <script src="../../js/materialize.js"></script>
+  <script src="../../js/init.js"></script>
+  <script>
+  $(".dropdown-button").dropdown();
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+
+function euclidVisual()
+{
+  $('#modal1').closeModal();
+  $('#euclidModal').openModal();
+}
+function havVisual()
+{
+  $('#modal1').closeModal();
+  $('#havModal').openModal();
+}
+       
+  </script>
+</html>
